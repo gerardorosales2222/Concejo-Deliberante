@@ -59,6 +59,16 @@ p{
     padding-left: 15px;
 }
 
+a{
+    text-decoration: none;
+    color: #ffff5a;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #ffff5a;
+}
+
 .contenedor{
     width: 100%;
     margin-bottom: 10px;
