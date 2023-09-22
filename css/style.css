@@ -143,3 +143,34 @@ footer{
     text-align: center;
     margin-top: auto;
 }
+
+@media only screen and (max-width: 700px){
+    .contenedor{
+        width: 100%;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        font-size: 30px;
+    }
+    .contenedor article{
+        width: 100%;
+        height: auto;
+    }
+    .contenedor article{
+        width: 100%;
+        height: auto;
+    }
+    #a1{
+        width: 100%;
+        height: 500px;
+    }
+    #a2{
+        width: 100%;
+        height: 500px;
+    }
+    #a3{
+        width: 100%;
+        height: 500px;
+    }
+}
