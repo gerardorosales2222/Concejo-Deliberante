@@ -1,176 +1,174 @@
-html{
-    height: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  background-color: #000;
+  color: #FFF;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/fondo.jpg);  
+  background-size: cover;
+  background-position: center;
+  padding: 10px 8%;
+  position: relative;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+.logo{
+  width: 150px;
+  cursor: pointer;
+}
+nav button{
+  border: 0;
+  outline: 0;
+  background: #db0001;
+  color: #fff;
+  padding: 7px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 4px;
+  border-left: 10px;
+  height: 35px;
+  cursor: pointer;
+}
+nav button a{
+  text-decoration: none;
+	color: #DCDCDC;
+}
+nav button:hover{
+	color: #DCDCDC;
+	border: none;
+	text-decoration: none;
+  animation: fadeIn .7s ease;
+  background-color: #a8070f;
+}
+@keyframes fadeIn {
+  0%{background-color: #db0001;}
+  100%{background-color: #a8070f;}
+}
+.header-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  margin-top: 100px;
+}
+.header-content h1{
+  font-size: 33px;
+  line-height: 70px;
+  font-weight: 600;
+  max-width: 650px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+.header-content h3{
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.email-signup{
+  background: #FFF;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  overflow: hidden;
+}
+.email-signup input{
+  flex: 1;
+  border: 0;
+  outline: 0;
+  margin-left: 20px;
+}
+.email-signup button{
+  background: #db0001;
+  border: 0;
+  color: #FFF;
+  outline: 0;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 15px 30px;
+}
+.email-signup button:hover{
+  background-color: #a8070f;
+  animation: fadeIn .7s ease;
+  text-decoration: none;
+}
+.email-signup button a{
+	text-decoration: none;
+	color: #DCDCDC;
+}
+.email-signup button a:visited{
+	text-decoration: none;
+	color: #DCDCDC;
+}
+footer{
+  padding: 50px 15% 10px;
+  border-top: 6px solid #333;
+  color: #777;
+}
+.row{
+  display: flex;
+  justify-content: space-evenly;
+}
+footer h2{
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+footer .col{
+  margin-bottom: 20px;
+}
+footer .col a{
+  display: block;
+  text-decoration: none;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+footer .row{
+  align-items: flex-start;
+  padding: 10px 0;
 }
 
-body{
+
+@media (max-width: 720px){
+  .logo{
+    width: 75px;
+  }
+  
+   .row{
     display: flex;
     flex-direction: column;
-    min-height: 100%;
-    font-family: sans-serif;
-    margin: 0;
-}
-
-header{
-    --opacidad-negro: 0.2;
-    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../img/super.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 200px;
-    background-position-y: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-h1{
-    color: #FFF;
-    font-size: 4em;
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-}
-
-h2{
-    font-size: 1.2em;
-    text-align: center;
-    color: #444;
-}
-
-h3{
-    padding-top: 50px;
-    color: rgb(236, 222, 13);
-    text-align: center;
-    font-size: 1.7em;
-    margin: 0;
-}
-
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    font-size: 1.3em;
-    text-align: center;
-    color: #FFF;
-    font-weight: bold;
-    text-shadow: #333 1px 0 10px;
-}
-
-p{
-    padding-left: 15px;
-}
-
-a{
+  }
+  footer h2{
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  footer .col{
+    margin-bottom: 20px;
+  }
+  footer .col a{
+    display: block;
     text-decoration: none;
-    color: #ffff5a;
-}
-
-a:visited {
-    text-decoration: none;
-    color: #ffff5a;
-}
-
-.contenedor{
-    width: 100%;
+    color: #777;
+    font-size: 18px;
     margin-bottom: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.contenedor article{
-    height: 300px;
-}
-
-#a1{
-    width: 28%;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    --opacidad-negro: 0.2;
-    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../img/frutas.jpg");
-}
-
-#a1:hover{
-    --opacidad-negro: 0.4;
-}
-
-#a2{
-    width: 28%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    --opacidad-negro: 0.2;
-    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../img/carne.jpg");
-}
-
-#a2:hover{
-    --opacidad-negro: 0.4;
-}
-
-#a3{
-    width: 28%;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    --opacidad-negro: 0.2;
-    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../img/pan.jpg");
-}
-
-#a3:hover{
-    --opacidad-negro: 0.4;
-}
-
-.recetas{
-    background-color: #ffff5a;
-    margin: 1% 3%;
-}
-
-.masinfo{
-    background-color: #333;
-    color: #fff;
-    margin: 1% 3%;
-}
-
-.masinfo h2{
-    color: #ffff5a;
-}
-
-footer{
-    background-color: #ddd;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: auto;
-}
-
-@media only screen and (max-width: 700px){
-    .contenedor{
-        width: 100%;
-        margin-bottom: 10px;
-        display: flex;
-        flex-direction:column;
-        align-items: center;
-        font-size: 30px;
-    }
-    .contenedor article{
-        width: 100%;
-        height: auto;
-    }
-    .contenedor article{
-        width: 100%;
-        height: auto;
-    }
-    #a1{
-        width: 100%;
-        height: 500px;
-    }
-    #a2{
-        width: 100%;
-        height: 500px;
-    }
-    #a3{
-        width: 100%;
-        height: 500px;
-    }
+    text-align: left;
+  }
+  footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+  }
 }

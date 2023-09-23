@@ -1,68 +1,62 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supermercado</title>
-    <link rel="icon" type="image/png" href="./img/favicon.png">
-    <link rel="stylesheet" href="./css/estilo.css">
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pelix</title>
+    <link rel="icon" type="image/jpg" href="./img/favicon.png"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+  </head>
+  <body>
     <header>
-        <h1>COMPARADOR</h1>
-        <nav>
-            <ul>
-                <li>Item</li>
-                <li>Item</li>
-                <li>Item</li>
-                <li>Item</li>
-            </ul>
-        </nav>
+      <nav>
+        <img class="logo" src="./img/Logo.svg" alt="PELIX">
+        <div>
+          <button><a href="./login.html">Iniciar sesión</a></button>
+          <button><a href="./registro.html">Registrarse</a></button>
+        </div>
+      </nav>
+      <div class="header-content">
+        <h1>Películas, series ilimitadas y mucho más</h1>
+        <h3>Disfruta donde quieras. Cancela cuando quieras.</h3>
+        <p>¿Quieres ver Pelix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Pelix.</p>
+        <form class="email-signup">
+          <input id="texto" type="email" placeholder="Dirección de email" required>
+          <button id="btn"><a href="./registro.html">Comenzar</a></button>
+        </form>
+      </div>
     </header>
-    <h2>Toda la variedad en comestibles la encontrás aquí</h2>
-    <section class="contenedor">
-        <article id="a1">
-            <h3>Verduras</h3>
-            <ul>
-                <li>Brócoli</li>
-                <li>Pimiento</li>
-                <li>Choclo</li>
-            </ul>
-        </article>
-        <article id="a2">
-            <h3>Carne</h3>
-            <ul>
-                <li>Peceto</li>
-                <li>Cuadril</li>
-                <li>Paleta</li>
-            </ul>
-        </article>
-        <article id="a3">
-            <h3>Panadería</h3>
-            <ul>
-                <li>Biszcochitos</li>
-                <li>Pan Frances</li>
-                <li>Facturas</li>
-            </ul>
-        </article>
-    </section>   
-    <section class="recetas">
-        <h2>Algunas ofertas</h2>
-        <article>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis id veritatis excepturi quibusdam quasi labore eius, eveniet autem distinctio minus explicabo cupiditate libero ratione doloremque maiores cum impedit error voluptatem.</p>
-        </article>
-    </section>
-    <section class="masinfo">
-        <h2>Más Información</h2>
-        <article>
-            <p>Lorem ipsum dolor sit. Officiis id veritatis excepturi quibusdam quasi labore eius, eveniet autem distinctio minus explicabo cupiditate libero ratione doloremque maiores cum impedit error voluptatem.
-                <a href="./ofertas.html">Vea Ofertas</a>
-            </p>
-        </article>
-    </section>
+    <main>
+    </main>
     <footer>
-        <article><p>Herramientas</p></article>
-    </footer> 
-</body>
+      <h2>¿Preguntas? Llama al 0800 345 1593</h2>
+      <div class="row">
+        <div class="col">
+          <a href="#">Preguntas frecuentes</a>
+          <a href="#">Relaciones con inversionistas</a>
+          <a href="#">Privacidad</a>
+          <a href="#">Prueba de velocidad</a>
+        </div>
+        <div class="col">
+          <a href="#">Centro de ayuda</a>
+          <a href="#">Empleo</a>
+          <a href="#">Preferencias de cookies</a>
+          <a href="#">Avisos legales</a>
+        </div>
+        <div class="col">
+          <a href="#">Cuentas</a>
+          <a href="#">Formas de ver</a>
+          <a href="#">Información corporativa</a>
+          <a href="#">Solo en Netflix</a>
+        </div>
+        <div class="col">
+          <a href="#">Prensa</a>
+          <a href="#">Términos de uso</a>
+          <a href="/Contacto/index.html">Contáctanos</a>
+          <a href="#">Prueba de velocidad</a>    
+        </div>
+      </div>      
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
