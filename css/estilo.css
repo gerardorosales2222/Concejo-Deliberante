@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    background-color: brown;
+    padding: 30px 20px;
+    z-index: 10;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    font-family: Helvetica, sans-serif;
+    margin: 0 15px;
+    text-decoration: none;
+    color: aliceblue;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+}
+.contenedor{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/super.jpg);
+    background-size: cover;
+    background-position: center center;
+}
