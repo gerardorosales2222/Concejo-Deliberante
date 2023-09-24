@@ -47,7 +47,6 @@ header ul li a{
     height: 100vh;
 }
 .slider{
-   
     position: relative;
     display: flex;
     overflow: scroll;
