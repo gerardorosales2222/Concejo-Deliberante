@@ -136,9 +136,9 @@ footer{
   justify-content: space-evenly;
 }
 footer h2{
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 footer .col{
   margin-bottom: 20px;
