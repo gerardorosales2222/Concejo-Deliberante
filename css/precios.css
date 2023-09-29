@@ -14,7 +14,7 @@ header{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    background-color: #f8dc89;
+    background-color: #fdbc2a;
     padding: 30px 20px;
     z-index: 10;
 }
@@ -55,7 +55,7 @@ footer{
     justify-content: space-around;
     transition: 0.7s;
     background-color: #444;
-    color: #ecde0d;
+    color: #fdbc2a;
     padding: 20px 10px;
     z-index: 10;
 }
