@@ -54,9 +54,17 @@ a{
     height: 100vh;
 }
 
+.accordion{
+    --bs-accordion-btn-bg: #EEE;
+    --bs-accordion-active-bg: #DDD;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-btn-focus-border: #555;
+}
+
 section{
     margin: 10px;
 }
+
 
 footer{
     margin-top: auto;
