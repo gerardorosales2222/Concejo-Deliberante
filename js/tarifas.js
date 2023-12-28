@@ -26,6 +26,7 @@ function calcular(precio,incremento){
     document.getElementById("pasN").innerHTML="$ "+Math.trunc(tu*3.75*incremento);
     document.getElementById("hora").innerHTML="$ "+Math.trunc(tu*6);
     document.getElementById("horaN").innerHTML="$ "+Math.trunc(tu*6*incremento);
+    document.getElementById('pns').value=precio;
 }
 const b = document.getElementById("boton");
 
