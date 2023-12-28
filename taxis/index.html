@@ -17,7 +17,8 @@
     </header>
     <section>
         <h2>A continuación se detallan los precios del servicio público de taxis.</h2>
-        <p>La tarifa se ajusta de manera automática de acuerdo al precio del litro de nafta super.</p>
+        <p>La tarifa se ajusta de manera automática de acuerdo al precio del litro de nafta super $<label id="nafta"></label>.</p>
+        <p>El incremento por tarifa nocturna y día feriado es <label id="tarifaN"></label>.</p>
     </section>
 
     <section>
@@ -101,18 +102,35 @@
             </tbody>
           </table>
     </section>
-        
     <section class="masinfo">
-        <h2>Más Información</h2>
-        <article>
-            <p><a href="./ordenanza.html">Ver ordenanza</a>
-            </p>
-        </article>
+      <h2>Más Información</h2>
+      <article>
+        <p><a href="./ordenanza.html">Ver ordenanza</a>
+        </p>
+      </article>
+    </section>
+    <section>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Modificar precio nafta
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <label for="pns">Precio Nafta Super: </label>
+              <input type="number" id="pns">
+              <button id="boton">Actualizar</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <footer>
         <article><p>Concejo Deliberante de San José de Metán</p></article>
     </footer>
-
-    <script src="../js/taxis.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/tarifas.js"></script>
 </body>
 </html>

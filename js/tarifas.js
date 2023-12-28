@@ -1,8 +1,9 @@
-
-function calcular(){
-    let precio=640;
+document.addEventListener("DOMContentLoaded", calcular(640,10));
+function calcular(precio,incremento){
     let tu=precio*2;
-    let incremento = 1.1;
+    document.getElementById("tarifaN").innerHTML=incremento+"%";
+    incremento = (incremento + 100)/100;
+    document.getElementById("nafta").innerHTML=precio;
     document.getElementById("01urbana").innerHTML="$ "+Math.trunc(tu);
     document.getElementById("01urbanaN").innerHTML="$ "+Math.trunc(tu*incremento);
     document.getElementById("02mv").innerHTML="$ "+Math.trunc(tu*1.5);
@@ -21,10 +22,15 @@ function calcular(){
     document.getElementById("08durN").innerHTML="$ "+Math.trunc(tu*3.25*incremento);
     document.getElementById("09posta").innerHTML="$ "+Math.trunc(tu*3.5);
     document.getElementById("09postaN").innerHTML="$ "+Math.trunc(tu*3.5*incremento);
-    document.getElementById("pas").innerHTML="$ "+tu*3.75;
-    document.getElementById("pasN").innerHTML="$ "+tu*3.75*incremento;
-    document.getElementById("hora").innerHTML="$ "+tu*6;
-    document.getElementById("horaN").innerHTML="$ "+tu*6*incremento;
+    document.getElementById("pas").innerHTML="$ "+Math.trunc(tu*3.75);
+    document.getElementById("pasN").innerHTML="$ "+Math.trunc(tu*3.75*incremento);
+    document.getElementById("hora").innerHTML="$ "+Math.trunc(tu*6);
+    document.getElementById("horaN").innerHTML="$ "+Math.trunc(tu*6*incremento);
 }
+const b = document.getElementById("boton");
 
-document.addEventListener("DOMContentLoaded", calcular);
+b.addEventListener("click", () => 
+    console.log(
+        calcular(document.getElementById("pns").value,10)
+    )
+);
