@@ -1,32 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Concejo Deliberante</title>
     <meta name="viewport" content= "width=device-width, user-scalable=no">
-    <link rel="icon" type="image/jpg" href="./img/favicon.png"/>
-    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="icon" type="image/jpg" href="../static/img/favicon.png"/>
+    <link rel="stylesheet" href="../static/css/style.css"/>
   </head>
   <body>
     <header>
       <nav>
-        <img class="logo" src="./img/Logo.png" alt="Logo">
-        <!-- <div>
-          <button><a href="./admin/index.html">Iniciar sesión</a></button>
-          <button><a href="./registro.html">Registrarse</a></button>
-        </div> -->
+        <img class="logo" src="../static/img/Logo.png" alt="Logo">
       </nav>
       <div class="header-content">
         <h1>Concejo Deliberante</h1>
         <h3>San José de Metán</h3>
-        <h1>PRÓXIMAMENTE</h1>
+        <p>Busqueda de normativas municipales aquí:</p>
+        <form class="email-signup">
+          <input id="texto" type="email" placeholder="Tema buscado" required>
+          <button id="btn"><a href="../templates/en_construccion">Buscar</a></button>
+        </form>
       </div>
     </header>
     <main>
     </main>
     <footer>
-      <h2>Suiza 207, Metán, Argentina</h2>
+      <h2>Suiza 207, Metán, Salta, Argentina</h2>
       <h2>concejodeliberantemetan@gmail.com</h2>
       <h2>+54 3876 420889</h2>
       <div class="row">
@@ -38,7 +38,7 @@
         </div>
         <div class="col">
           <a href="#">Preguntas frecuentes</a>
-          <a href="./taxis/">Tarifa de taxis</a>
+          <a href="./taxi_tarifas.html">Tarifa de taxis</a>
           <a href="#">Tarea administrativa</a>
           <a href="#">Contacto</a>
         </div>
@@ -49,13 +49,13 @@
           <a href="#">Reglamento Interno</a>
         </div>
         <div class="col">
-          <a href="#">Autoridades</a>
-          <a href="#">Organigrama</a>
           <a href="#">Bloques</a>
+          <a href="#">Contacto</a>
+          <a href="#">Farmacias de Turno</a>
           <a href="#">Más Información</a>
         </div>
       </div>
     </footer>
-    <script src="./js/main.js"></script>
+    <script src="../static/js/tarifas.js"></script>
   </body>
 </html>

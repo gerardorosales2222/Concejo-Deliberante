@@ -48,6 +48,11 @@ a{
     color: #444; 
 }
 
+footer p a{
+    color: #fdbc2a;
+    text-decoration: none;
+}
+
 .contenedor{
     position: relative;
     width: 100%;
