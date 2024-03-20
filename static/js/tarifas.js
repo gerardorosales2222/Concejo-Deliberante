@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", calcular(640,10));
+document.addEventListener("DOMContentLoaded", calcular(777,10));
 function calcular(precio,incremento){
     let tu=precio*2;
     document.getElementById("tarifaN").innerHTML=incremento+"%";
